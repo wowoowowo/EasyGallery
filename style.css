@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    width: clamp(500px, 80vw, 5000px);
+    position: relative;
+    display: flex;
+    
+}
+.card{
+    border: 0.5px solid snow;
+    width: 15%;    height: 35vh;
+    transition: width .5s ease-in;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card[data-set="true"] {
+    width: 40vw;
+    transition: width .5s ease-in-out;
+
+}
+.actionborder{
+    z-index: -1;
+    position: absolute;
+    border: 2px solid gold;
+    height: 35.5vh;
+    width: 22vw;
+    transform: translate(-1%,-1%);
+    
+}
